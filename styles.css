@@ -1,3 +1,17 @@
 div{
   border:1px solid;
+  padding:10px;
+  background-color: #e6f2e9;
+}
+.has-flex{
+  display: flex;
+}
+.has-end{
+  justify-content: flex-end;
+}
+.has-between{
+  justify-content: space-between;
+}
+.has-center{
+  justify-content: center;
 }

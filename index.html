@@ -3,16 +3,72 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+
+    <title>Online Turing Machine</title>
   </head>
   <body>
     <div class="content">
-      <h1>Online Turing Machine</h1>
-      <h2>M = (Q, Signma,gamma, delta, q)</h2>
-      <div class="Alpha">
-        sigma = {}
+      <h1 style="text-align:center;">Online Turing Machine</h1>
+      <h2 style="text-align:center;"> M = ( Q, &Sigma; , &Gamma;, &delta; , q )</h2>
+      <div class="Alphabet has-flex has-between">
+        <div class="">
+          <p>&Sigma; = { <span id="add1"></span>
+            <input type="button" id="addAlpha" value="+">
+          }</p>
+        </div>
+        <div class="">
+          <p>&Gamma; = {+}</p>
+        </div>
       </div>
+      <div class="States">
+        <p>Q = {q, +}</p>
+      </div>
+
+      <div class="delta">
+          <p>&delta; : [q,+,+,+,+]+</p>
+      </div>
+      <div class="Edit has-flex has-end">
+        <div class="">
+          <button type="button">Finish</button>
+
+        </div>
+        <div class="">
+          <button type="button">Edit</button>
+        </div>
+
+      </div>
+
+      <div class="input has-flex has-between">
+        <div class="">
+          input <input type="text" name="" value=" ">
+        </div>
+        <div class="">
+          <button type="button" name="button">Run</button>
+        </div>
+      </div>
+
+
+      <div class="Execute">
+        Execution
+        <div class="machine">
+
+        </div>
+      </div>
+
+      <div class="Steps has-flex has-center">
+        <div class="">
+          <button type="button" name="button">Step Ahead</button>
+        </div>
+        <div class="">
+          <button type="button" name="button">Back</button>
+        </div>
+      </div>
+
+
+
     </div>
+
+    <script src="Script.js"></script>
 
   </body>
 </html>
